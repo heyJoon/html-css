@@ -134,49 +134,8 @@ hr { display: none; }
 	background-color:rgb(206, 221, 206);
 }
 
-#container #content #team { 
-	padding: 64px 16px 64px 16px;
-	width: 1200px;
-	position: relative;
-	text-align: center;
-	margin: 0 auto;
-}
+#team { position : relative; text-align: center; }
+.member { width: 100%; margin: 0 auto; }
+.mem { display: inline-block; margin: 3em; }
+.mem img { width: 200px; border: 1px solid white;	border-radius: 50%; }
 
-#container #content #team .title {
-	font-size: 24px;
-}
-
-#container #content #team {
-}
-
-#container #content #team .member {
-
-}
-
-#container #content #team .member .mem {
-	display: inline-block;
-}
-
-#container #content #team .member img {
-	border-radius: 50%;
-	width: 200px;
-}
-
-#container #content #team .member .mem1{
-}
-
-#container #content #team .member .mem2{
-}
-
-#container #content #team .member .mem3{
-}
-
-#container #content #team .member .mem4{
-}
-
-@media screen and (max-width: 600px) {
-	#team .member img {
-		width:100%;
-		float:left;
-	}
-}
