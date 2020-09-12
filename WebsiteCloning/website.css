@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: none; }
+
+/* Style 설정 */
+
+.blind {
+	position: absolute;
+	left: 0;
+	top: -9999em;
+}
+
+.skip-nav a {
+	position: absolute;
+	display: block;
+	z-index: 9999;
+	width: 100%;
+	line-height: 2em;
+	font-size: 1.2em;
+	background-color: blue;
+	text-align: center;
+	top:-9999em;
+	left:0;
+}
+
+.skip-nav a:focus {
+	top:0;
+}
+
+#wrap {
+	position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    max-width: 1200px;
+	position: fixed;
+	background-color: gray;
+	width: 100%;
+	z-index: 200;
+	line-height: 50px;
+}
+
+#header nav{}
+#header nav .nav_bar {}
+#header .nav_bar li a {
+	display: block;	
+	float: left;
+	text-decoration: none;
+	background-color: rgb(36, 35, 35);
+	color: darkgrey;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+#header .nav_bar li a:hover {
+	background-color: rgb(131, 120, 120);
+}
+
+#header .nav_bar .search {
+	float:right;
+}
+
+.visual {
+	padding-top: 50px;
+}
+
+.visual #headerImage {
+	max-width: 1200px;
+}
+
+.visual .bar {
+	display: block;
+	position: absolute;
+	top:780px;
+	left:0;
+	z-index: 100;
+	text-align: center;
+	line-height: 50px;
+	font-size: 1.5em;
+	width: 300px;
+	height: 50px;
+}
+
+.visual .bar:hover {
+	background-color:rgb(206, 221, 206);
+}
+
+#team { position : relative; text-align: center; }
+.member { width: 100%; margin: 0 auto; }
+.mem { display: inline-block; margin: 3em; }
+.mem img { width: 200px; border: 1px solid white;	border-radius: 50%; }
+
