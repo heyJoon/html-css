@@ -56,12 +56,15 @@ hr { display: none; }
 	top: -9999em;
 }
 
+.title { font-size: 36px; }
+
 .skip-nav a {
 	position: absolute;
 	display: block;
 	z-index: 9999;
 	width: 100%;
-	line-height: 2em;
+	height: 50px;
+	line-height: 50px;
 	font-size: 1.2em;
 	background-color: blue;
 	text-align: center;
@@ -110,35 +113,100 @@ hr { display: none; }
 }
 
 .visual {
+	position: relative;
 	padding-top: 50px;
 }
 
 .visual #headerImage {
-	max-width: 1200px;
+	width: 100%;
 }
 
 .visual .bar {
 	display: block;
 	position: absolute;
-	top:780px;
+	top:90%;
 	left:0;
 	z-index: 100;
 	text-align: center;
-	line-height: 50px;
-	font-size: 1.5em;
-	width: 300px;
-	height: 50px;
+	font-size: 1em;
+	width: 30%;
+	height: 5%;
 }
 
 .visual .bar:hover {
 	background-color:rgb(206, 221, 206);
 }
 
-#team { position: relative; }
-.member { height: 30vh; display: flex; background-color: lime; flex-wrap: nowrap; justify-content: space-around; align-items: center; }
-.mem { width: 200px; height: 100px; border-radius: 50%;}
+#team, #Work, #Pricing, #ContactUs, #footer { position: relative; margin: 0 auto; text-align: center; padding: 50px 0 0 0;  }
+#team .desc, #Work .desc, #Pricing .desc { padding: 30px;}
+
+#team .desc {padding-bottom: 70px;}
+.member { height: 35vh; display: flex; background: url(/img/ocean.jpg); justify-content: space-around; align-items: center; }
+.mem { }
+.mem img { width: 100%; height: 200px; border-radius: 50%;}
+/*
 .mem1 { background-color: greenyellow;}
 .mem2 { background-color: yellow; }
 .mem3 { background-color: red; }
-.mem4 { background-color: green; }
+.mem4 { background-color: green; } 
+*/
+ 
+@media screen and (max-width:600px) {
+	.member {
+		display: block;
+		height: 100%;
+	}
+	.mem img {
+		width: 50%;
+		padding: 30px;
+	}
+} 
 
+
+.Work__gallery { height: 45vh; display: flex; flex-wrap: nowrap; justify-content: space-around; margin: 30px 0;  }
+.Work_gallery_artwork { background-color: grey; padding: 5px; width: 250px; height: auto; }
+.Work_gallery_artwork img { width: 100%; height: 200px; }
+
+@media screen and (max-width:600px) {
+	.Work__gallery {
+		display: block;
+		margin: 0 auto;
+		height: 100%;
+	}
+	.Work_gallery_artwork {
+		width: 100%;
+	}
+}
+
+#Pricing { position: relative;}
+#Pricing .inner { display: flex; justify-content: center; }
+#Pricing .Pricing_box { width: 33%; line-height: 50px;}
+#Pricing .Pricing_title { background-color: grey; }
+#Pricing dd { margin-left: 0;}
+#Pricing dt, dd { border: 1px solid black; }
+
+#ContactUs .inner { display: flex; margin: 30px; align-items: stretch; height: 50vh;}
+#ContactUs .ContactUs_info { background-color: grey; width: 30%; height: 100%; border: 1px solid black; }
+#ContactUs .ContactUs_info .ContacUs_info_title { font-size: 24px; padding: 5px;}
+#ContactUs .ContactUs_info p { margin: 10px; height: 15%; line-height: 20px; }
+#ContactUs .ContactUs_Userinfo { background-color: darkgreen; width: 70%; height: 100%; border: 1px solid black;}
+#ContactUs .ContactUs_Userinfo p, span { text-align: left; margin: 10px;}
+#ContactUs .ContactUs_Userinfo span { float: left; }
+#ContactUs .ContactUs_Userinfo .button { width: 95%; }
+#ContactUs .ContactUs_Userinfo .submit { float: right;}
+
+@media screen and (max-width:630px) {
+	.ContactUs_Userinfo {
+		height: 100%;
+	}
+	.ContactUs_info {
+		height: 100%;
+		font-size: 10px;
+	}
+}
+
+#footer img { width: 100%; }
+#footer .footer_icons { display: inline-block; background-color: lime; width: 30px; height: 30px; line-height: 30px;}
+#footer .footer_title { font-size: 24px; padding: 20px;}
+#footer .footer_top { display:block; float: right; background-color: grey; width: 30px; height: 30px; line-height: 30px; border-radius: 50%;}
+#footer .footer_top:hover {}
