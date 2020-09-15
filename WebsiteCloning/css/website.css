@@ -24,7 +24,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -85,6 +87,8 @@ hr { display: none; }
 	top:90%;
 	left:0;
 	z-index: 100;
+	background-color: black;
+	color: white;
 	text-align: center;
 	font-size: 1em;
 	width: 30%;
@@ -97,7 +101,6 @@ hr { display: none; }
 
 #team, #Work, #Pricing, #ContactUs, #footer { position: relative; margin: 0 auto; text-align: center; padding: 50px 0 0 0;  }
 #team .desc, #Work .desc, #Pricing .desc { padding: 30px;}
-
 #team .desc {padding-bottom: 70px;}
 .member { height: 35vh; display: flex; background: url(/img/ocean.jpg); justify-content: space-around; align-items: center; }
 .mem { }
