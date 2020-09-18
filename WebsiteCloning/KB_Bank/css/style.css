@@ -3,10 +3,12 @@
 :root {
     
     /* Color */
+
     --color-white: #ffffff;
     --color-yellow: #ffcd05;
     --color-orange: #ffce0b;
-    --color-beige: rgb(255, 249, 213);
+    --color-beige: #fff9d5;
+    --color-light-beige: #fffcea;
     --color-light-grey: #f7f6f6;
     --color-black: #000000;
 
@@ -53,6 +55,8 @@ h3 {
     margin: 4px 0;
 }
 
+a { text-decoration: none; color: var(--color-black); }
+
 /* Style 설정 */
 
 .blind {
@@ -64,22 +68,39 @@ h3 {
 .Skip-nav__content a { position:absolute; top:-9999em; left: 0; text-align: center; display: block; width: 100%; height: 50px; background-color: blue; line-height: 50px;} 
 .Skip-nav__content a:focus { top:0; }
 #wrap { position: relative; max-width: 980px; margin: 0 auto; text-align: center; }
-
-#nav-bar { display: flex; flex-grow: row; background-color: var(--color-beige);}
-.nav-bar__list { display: flex; justify-content: flex-end;}
-.nav-bar__logo img { width: 110px; height: 70px; }
+#nav-bar { position: absolute; width: 100%; display: flex; justify-content: space-around; background-color: var(--color-beige); z-index: 100;}
+.nav-bar__list { display: flex; justify-content: flex-end; }
+.nav-bar__logo img { width: 110px; height: 65px; }
 .nav-bar__list { flex-grow: 1; }
 .nav-bar__list__btn { display: inline; }
-.nav-bar__list__btn a { line-height: 70px; padding: 9px;}
+.nav-bar__list__btn a { line-height: 65px; padding: 9px;}
 
-#main { background-color: var(--color-beige); height: 530px;}
-.login { float: left; padding-left: 20px;}
-.login__button { border: 1px solid black; margin: 0; padding: 0;}
+#container {}
+#content {}
+#main { position: relative; background-color: var(--color-beige); height: 530px; padding: 160px 30px 160px 30px; }
+/* .login { float: left; padding-left: 20px;} */
+.main__login { position: absolute; display: flex; margin: 0 30px; top: 65px; left: 0; background-color: #ffffff;}
 
-.visual { position: absolute; left: 50px; padding-top: 90px;}
-.visual__letters1 {  }
+.visual { position: relative; }
+.visual__letters__letter1 { position: absolute; left: 0; }
+.visual__letters__letter2 { position: absolute; left: 0; margin-top: 62px; }
+.visual__anchor { position: absolute; left: 0; margin-top: 165px; }
+/* .visual__box { position: relative; } */
+.visual__image { position: absolute; right: 0; bottom: 0; width: 475px; height: 480px;}
+.video__box { position: absolute; right: 0; top: 420px; width: 100px; height: 98px; background-color: var(--color-light-beige); opacity: 40%; padding: 15px; }
+/* .mainbar { position: absolute; width: 930px; } */
+.mainbar__list { position: absolute; width: 100%; height: 80px; display: flex; justify-content: space-around; top: 500px; align-items: center; background-color: var(--color-yellow); }
+.mainbar-leftbox { position: relative; display: flex; width: 30%;  text-align: center; }
+/* .mainbar-left ul { flex-grow: 1; } */
+.mainbar-left li { display: inline-block; width: 33%;}
+.mainbar-rightbox { display: flex; width: 70%; background-color: var(--color-white);}
+/* .mainbar-right ul { flex-grow: 1; } */
 
-.video { position: absolute; right: 0; top: 450px;}
+.board__notice-events { display: flex; padding: 100px 0 50px 0; }
+#notice, #events { position: relative; width: 50%; }
+#notice:after { clear: both; }
+#events:after { clear: both; }
+.notice__title, .events__title { float: left; padding: 10px;}
+.notice__list p, .events__list p { padding: 4px; float: left;}
+.notice__list:after, .events__list:after { clear: both; }
 
-.mainbar { position: absolute; width: 930px; }
-.mainbar__list { display: inline; }
