@@ -88,6 +88,8 @@ a { text-decoration: none; color: var(--color-black); }
 /* .visual__box { position: relative; } */
 .visual__image { position: absolute; right: 0; bottom: 0; width: 475px; height: 480px;}
 .video__box { position: absolute; right: 0; top: 420px; width: 100px; height: 98px; background-color: var(--color-light-beige); opacity: 40%; padding: 15px; }
+
+#borad {}
 /* .mainbar { position: absolute; width: 930px; } */
 .mainbar__list { position: absolute; width: 100%; height: 80px; display: flex; justify-content: space-around; top: 500px; align-items: center; background-color: var(--color-yellow); }
 .mainbar-leftbox { position: relative; display: flex; width: 30%;  text-align: center; }
@@ -95,8 +97,38 @@ a { text-decoration: none; color: var(--color-black); }
 .mainbar-left li { display: inline-block; width: 33%;}
 .mainbar-rightbox { display: flex; width: 70%; background-color: var(--color-white);}
 /* .mainbar-right ul { flex-grow: 1; } */
-
 .board__notice-events { display: flex; padding: 100px 0 50px 0; }
+
+.board__gallery { }
+.service__container { display: flex; }
+.service1 { position: relative; background: url(../img/services/liv-m-background.png); width: 310px; height: 125px; }
+.service1 img { width: 30%; padding-top: 60px; }
+.service2 { position: relative; background: url(../img/services/liiv-m.png); width: 310px; height: 125px; }
+.service2 img { width: 50%;}
+.service3 { position: relative; background: url(../img/services/KBot-sam-background.png); width: 310px; height: 125px; }
+.service3 img { width: 30%; }
+.finance__title { float: left; }
+.consumer__title { float: left; }
+.consumer__list { display: flex; }
+.consumer__list li { list-style: initial; }
+.consumer__list p { margin: 5px; padding: 10px; }
+.consumer__list__service { width: 25%;}
+.consumer__list__prohibit { width: 25%;}
+.consumer__list__forbid { width: 25%;}
+
+.consumer__protect { float: left; }
+.consumer__protect ul { display: flex; }
+.consumer__protect li { width: 25%; }
+
+#application { position: relative; }
+#application h1 { left: 0; margin-right: 800px; }
+.applications { display: flex; justify-content: space-around;}
+.applications img { border-radius: 20%;}
+
+#footer {  }
+.btm-menu {  }
+.btm-menu img { display: inline-block; width: 50px; height: 50px;}
+
 #notice, #events { position: relative; width: 50%; }
 #notice:after { clear: both; }
 #events:after { clear: both; }
