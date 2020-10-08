@@ -1,0 +1,10 @@
+.flex-container {
+    /* display: flex; */
+    /* width: 600px; */
+    /* justify-content: space-between; */
+    /* margin: 0 auto; */
+}
+
+.flex-item {
+    background-color: yellowgreen;
+}
