@@ -5,6 +5,8 @@
     /* margin: 0 auto; */
 }
 
-.flex-item {
+.flex-item, .grid-item {
     background-color: yellowgreen;
+    border: 1px solid black;
+    color: honeydew;
 }
