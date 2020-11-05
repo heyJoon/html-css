@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul {
+            display: flex;
+        }
+        li {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li:first-child {
+            margin-right: auto;
+        }
+
+        .parent__container {
+
+        }
+
+        .container {
+            /* display: none; */
+            position: absolute;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f8f8;
+        }
+
+        .container li {
+            margin: 5px;
+        }
+
+        .blind {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="../img/—Pngtree—vector could_2931517.png" style="width:30px; height: 30px;" alt="">
+            </li>
+            <li class="parent__container">
+                <a href="">연습</a>
+                <ul class="container blind">
+                    <li><a href="#">조회</a></li>
+                    <li><a href="#">이체</a></li>
+                    <li><a href="#">공과금</a></li>
+                    <li><a href="#">뱅킹관리</a></li>
+                    <li><a href="#">금융상품</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+            <li>
+                <a href="">연습</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus fugit eum voluptates quas atque dolore inventore nostrum dicta recusandae accusamus mollitia, eius fuga nihil esse dolorem laboriosam porro, iusto tenetur.
+        Deleniti quisquam expedita quas deserunt pariatur, nulla necessitatibus enim dolore cupiditate provident autem reiciendis, dolorum laboriosam optio delectus voluptatem culpa amet. Quidem recusandae accusantium beatae totam eaque eius. Consequuntur, esse.
+    </div>
+    <script>
+        const parent = document.querySelector(".parent__container"),
+        child = document.querySelector(".container");
+
+        function showText(e){
+            console.log(e.target);
+            child.classList.remove("blind");
+        }
+
+        function hideText(e){
+            child.classList.add("blind");
+        }
+
+        parent.addEventListener("mouseover", showText);
+        parent.addEventListener("mouseout", hideText);
+
+    </script>
+</body>
+</html>
