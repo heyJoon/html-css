@@ -2,9 +2,10 @@
 
     1. 작성자 : 이준호
     2. 작성일 : 2020/09/15(화)
-    3. 작성내용 : Display-Flex를 연습하기 위해 만들어본 웹 사이트입니다. 
-    해당 웹사이트는 W3C 사이트의 웹 템플릿을 클론한 사이트입니다. 
-    
+    3. 작성내용 : Display-Flex를 연습하기 위해 만들어본 웹 사이트입니다. 해당 웹사이트는 순수 제 힘으로 W3C 사이트의 웹 템플릿을 클론한 사이트입니다. 
+    4. 수정일 : 2020/11/06(금)
+    5. 수정이유 : 기능 추가(반응형 Navbar, Menu Dropdown)
+
 -->
 
 <!DOCTYPE html>
@@ -32,12 +33,18 @@
             <nav>
                 <h2 class="blind">Main Navigation</h2>
                 <ul class="nav_bar">
-                    <li class="logo"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                    <li class="logo"><a href="#"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#Work">Work</a></li>
                     <li><a href="#Pricing">Price</a></li>
                     <li><a href="#ContactUs">Contact</a></li>
-                    <li><a href="#footer">Dropdown</a></li>
+                    <li class="dropdown"><a href="#footer">Drop <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropmenu blind">
+                            <li class="menus"><a href="#">Link</a></li>
+                            <li class="menus"><a href="#">Link</a></li>
+                            <li class="menus"><a href="#">Link</a></li>
+                        </ul>
+                    </li>
                     <li class="search"><a href="#"><i class="fas fa-search"></i>Search</a></li>
                 </ul>
             </nav>
@@ -81,12 +88,10 @@
             </section>
                 <hr>
                 <section id="Work">
-                    <h2><strong class="title">Our Work</strong></h2>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos, fuga nulla sunt molestias optio sapiente assumenda. A doloremque, ullam placeat consequuntur error voluptate debitis itaque animi. Nam, itaque fuga?</p>
                     <div class="Work__gallery">
                         <div class="Work_gallery_artwork">
-                            <h2>John</h2>
-                            <p>Hi!</p>
+                            <h2><strong class="title">Our Work</strong></h2>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos, fuga nulla sunt molestias optio sapiente assumenda. A doloremque, ullam placeat consequuntur error voluptate debitis itaque animi. Nam, itaque fuga?</p>
                         </div>
                         <div class="Work_gallery_artwork">
                             <img src="img/snow.jpg" alt="">
@@ -174,5 +179,24 @@
         <!--footer-->
     </div>
     <!--container-->
+    <script>
+        let dropdown = document.querySelector('.dropdown'),
+        dropmenu = document.querySelector('.dropmenu');
+
+        function showMenu(e){
+            dropmenu.classList.remove('blind');
+        }
+
+        function hideMenu(e){
+            dropmenu.classList.add('blind');
+        }
+
+        function init(){
+            dropdown.addEventListener('mouseover', showMenu);
+            dropdown.addEventListener('mouseout', hideMenu);
+        }
+
+        init();
+    </script>
 </body>
 </html>
