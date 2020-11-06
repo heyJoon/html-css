@@ -1,4 +1,4 @@
-# HTML-CSS
+# Website Cloning
 
 HTML-CSS를 연습하기 위해, 웹 사이트 템플릿을 클론해보았습니다. 
 
