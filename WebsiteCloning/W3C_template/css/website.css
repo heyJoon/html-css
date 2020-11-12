@@ -71,6 +71,37 @@ hr { display: none; }
 	text-align: center;
 }
 
+/* 해당 버튼을 눌렀을 때, 관련된 요소들이 pop해서 나오는 방법에 대해서 알아보자. 
+2. 메뉴 버튼은 이미 존재하고 있고, 해당 요소를 검색바와 바꿔주면 된다. CSS만으로도 처리할 수 있다!  */
+
+@media screen and (min-width:600px){
+	#header nav .nav_bar .header__menubar {
+		display: none;
+	}
+}
+
+@media screen and (max-width:600px){
+	#header .nav_bar li {
+		display: none;
+	}
+	#header .nav_bar .logo {
+		display: block;
+	}
+
+	#header .nav_bar .header__menubar {
+		display: block;
+		margin-left: auto;
+	}
+
+	#header .nav_bar .header__menubar a:active + #header .nav_bar ..sidebars {
+		display: block;
+	}
+}
+
+/* 
+
+글자가 작아지는 방식
+
 @media screen and (max-width:605px) and (min-width:400px) {
 	#header nav .nav_bar li {
 		font-size: 0.2em;
@@ -81,11 +112,12 @@ hr { display: none; }
 	#header nav .nav_bar li a {
 		font-size: 0.05em;
 	}
-}
+} 
+*/
 
 #header .nav_bar li a:hover { background-color: rgb(131, 120, 120); }
-#header .nav_bar li .dropdown:hover { }
-#header .nav_bar li .dropmenu { position: absolute; background-color: black; width: 15%; }
+#header .nav_bar li .dropmenu { display: none; }
+#header .nav_bar li:nth-child(6):hover > .dropmenu { display: block; position: absolute; width: 15%; }
 #header .nav_bar li .menus { width: 100%; }
 #header .nav_bar li .menus:hover { background-color: grey; }
 #header .nav_bar .search { margin-left: auto; }

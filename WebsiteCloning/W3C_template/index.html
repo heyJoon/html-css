@@ -10,6 +10,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua">
@@ -34,18 +35,28 @@
                 <h2 class="blind">Main Navigation</h2>
                 <ul class="nav_bar">
                     <li class="logo"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <!-- 해당 내용 안에 관련한  -->
                     <li><a href="#team">Team</a></li>
                     <li><a href="#Work">Work</a></li>
                     <li><a href="#Pricing">Price</a></li>
                     <li><a href="#ContactUs">Contact</a></li>
-                    <li class="dropdown"><a href="#footer">Drop <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropmenu blind">
+                    <li><a href="#footer">Drop <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropmenu">
                             <li class="menus"><a href="#">Link</a></li>
                             <li class="menus"><a href="#">Link</a></li>
                             <li class="menus"><a href="#">Link</a></li>
                         </ul>
                     </li>
-                    <li class="search"><a href="#"><i class="fas fa-search"></i>Search</a></li>
+                    <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="header__menubar"><a href="#"><i class="fas fa-bars"></i></a>
+                        <ul class="sidebars">
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#Work">Work</a></li>
+                            <li><a href="#Pricing">Pricing</a></li>
+                            <li><a href="#ContactUs">Contact</a></li>
+                            <li><a href="search"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -61,37 +72,39 @@
             <!--content-->
             <div id="content">
                 <section id="team">
-                <h2><span class="title">OUR TEAM</span></h2>
-                <p class="desc">Meet the team - our office rats:</p>
-                <div class="member">
-                    <div class="mem mem1">
-                        <img src="img/avatar.jpg" alt="">
-                        <h2>John</h2>
-                        <p>Hi!</p>
+                    <h2><span class="title">OUR TEAM</span></h2>
+                    <p class="desc">Meet the team - our office rats:</p>
+                    <div class="member">
+                        <div class="mem mem1">
+                            <img src="img/avatar.jpg" alt="">
+                            <h2>John</h2>
+                            <p>Hi!</p>
+                        </div>
+                        <div class="mem mem2">
+                            <img src="img/avatar.jpg" alt="">
+                            <h2>John</h2>
+                            <p>Hi!</p>
+                        </div>
+                        <div class="mem mem3">
+                            <img src="img/avatar.jpg" alt="">
+                            <h2>John</h2>
+                            <p>Hi!</p>
+                        </div>
+                        <div class="mem mem4">
+                            <img src="img/avatar.jpg" alt="">
+                            <h2>John</h2>
+                            <p>Hi!</p>
+                        </div>
                     </div>
-                    <div class="mem mem2">
-                        <img src="img/avatar.jpg" alt="">
-                        <h2>John</h2>
-                        <p>Hi!</p>
-                    </div>
-                    <div class="mem mem3">
-                        <img src="img/avatar.jpg" alt="">
-                        <h2>John</h2>
-                        <p>Hi!</p>
-                    </div>        
-                    <div class="mem mem4">
-                        <img src="img/avatar.jpg" alt="">
-                        <h2>John</h2>
-                        <p>Hi!</p>
-                    </div>
-                </div>
-            </section>
+                </section>
                 <hr>
                 <section id="Work">
                     <div class="Work__gallery">
                         <div class="Work_gallery_artwork">
                             <h2><strong class="title">Our Work</strong></h2>
-                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos, fuga nulla sunt molestias optio sapiente assumenda. A doloremque, ullam placeat consequuntur error voluptate debitis itaque animi. Nam, itaque fuga?</p>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos,
+                                fuga nulla sunt molestias optio sapiente assumenda. A doloremque, ullam placeat
+                                consequuntur error voluptate debitis itaque animi. Nam, itaque fuga?</p>
                         </div>
                         <div class="Work_gallery_artwork">
                             <img src="img/snow.jpg" alt="">
@@ -102,7 +115,7 @@
                             <img src="img/lights.jpg" alt="">
                             <h2>John</h2>
                             <p>Hi!</p>
-                        </div>        
+                        </div>
                         <div class="Work_gallery_artwork">
                             <img src="img/mountains.jpg" alt="">
                             <h2>John</h2>
@@ -180,23 +193,10 @@
     </div>
     <!--container-->
     <script>
-        let dropdown = document.querySelector('.dropdown'),
-        dropmenu = document.querySelector('.dropmenu');
 
-        function showMenu(e){
-            dropmenu.classList.remove('blind');
-        }
 
-        function hideMenu(e){
-            dropmenu.classList.add('blind');
-        }
 
-        function init(){
-            dropdown.addEventListener('mouseover', showMenu);
-            dropdown.addEventListener('mouseout', hideMenu);
-        }
-
-        init();
     </script>
 </body>
+
 </html>
