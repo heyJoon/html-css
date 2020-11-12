@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e38bb359b4.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    
+    <!-- Nav 부분 : Youtube 로고와 검색 Ui, 목록 Ui가 들어 갈 것. -->
+
+    <nav class="nav">
+        <div class="menu">
+            <div class="menu__logo">
+                <i class="fab fa-youtube"></i>
+                <h2>Youtube</h2>
+            </div>
+            <div class="menu__search">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header 부분 : 동영상이 들어가는 부분임. 동영상에 대한 소개 부분 -->
+
+    <header class="header">
+        <div class="video">
+            <video autoplay controls loop controlsList="nodownload" poster="image.webp">
+                <source src="video.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag</strong>
+            </video>
+        </div>
+    </header>
+    
+    <!-- Description 부분 : 동영상의 설명 부분. -->
+
+    <section class="description">
+
+        <div class="description__nav">
+            <div class="description__desc">
+                <div class="description__account">
+                    <img src="jaypark.jpeg" alt="JayPark">
+                    <h3>JayPark TV</h3>
+                    <span>구독자 216만명</span>
+                </div>
+                <div class="description__subscribe">
+                    <h3>Subscribe</h3>
+                </div>
+            </div>
+        </div>
+
+    <!-- Buttons 부분 : 각종 Ui가 들어가는 부분 -->
+
+        <div class="buttons">
+            <div class="buttons__like">
+                <i class="fas fa-thumbs-up" alt="like button"></i>
+                <span class="buttons__description">1K</span> 
+            </div>
+            <div class="buttons__dislike">
+                <i class="fas fa-thumbs-down" alt="dislike button"></i>
+                <span class="buttons__description">0</span>
+            </div>
+            <div class="buttons__share">
+                <i class="fas fa-share" alt="share button"></i>
+                <span class="buttons__description">Share</span>
+            </div>
+            <div class="buttons__save">
+                <i class="fas fa-plus" alt="save button"></i>
+                <span class="buttons__description">Save</span>
+            </div>
+            <div class="buttons__report">
+                <i class="fas fa-flag" alt="report button"></i>
+                <span class="buttons__description">Report</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Playlist 부분 : 동영상 소개와 관련 설명 -->
+    <section class="playlist">
+        <div class="playlist__container">
+            <div class="playlist__image">
+                <img src="joah.jpg" alt="">
+            </div>
+            <div class="playlist__content">
+                <h3>박재범 Jay Park '좋아 Joah' [Official Music Video]</h3>
+                <span>조회수 17,609,779회ㆍ2013. 4. 10.</span>
+            </div>
+            <div class="playlist__content"></div>
+        </div>
+        <div class="playlist__container">
+            <div class="playlist__image">
+                <img src="solo.jpg" alt="JayPark - Solo">
+            </div>
+            <div class="playlist__content">
+                <h3>박재범 Jay Park - Solo (Feat. Hoody) Official Music Video</h3>
+                <span>조회수 24,579,986회ㆍ2015. 10. 3.</span>
+            </div>
+            <div class="playlist__content"></div>
+        </div>
+        <div class="playlist__container">
+            <div class="playlist__image">
+                <img src="yacth.jpg" alt="">
+            </div>
+            <div class="playlist__content"></div>
+            <div class="playlist__content"></div>
+        </div>
+    </section>
+</body>
+</html>
