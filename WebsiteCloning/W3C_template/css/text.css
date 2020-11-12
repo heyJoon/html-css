@@ -1,0 +1,6 @@
+.container { background-color: yellow; display: flex; }
+.content { background-color: red; margin: 50px; width: 10%; }
+.menu { display: none; }
+/* .content:nth-child(5):hover > .menu { display: block; }  */
+.content:nth-child(5):active > .menu { display: block; }
+.content:nth-child(5):visited > .menu { display: block; }

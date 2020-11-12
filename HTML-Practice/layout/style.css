@@ -1,0 +1,6 @@
+* { margin: 0; padding: 0; border: 0;}
+html {  }
+body { max-width: 1800px; }
+header { display: flex; background-color: yellow; height: 200px; }
+nav { width: 30%;  }
+#layout-content { }
