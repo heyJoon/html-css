@@ -93,7 +93,8 @@ hr { display: none; }
 	#header .nav_bar .header__menubar {
 		display: block;
 		margin-left: auto;
-    }
+	}
+
     /* .main__container { display: block; } */
 
 }

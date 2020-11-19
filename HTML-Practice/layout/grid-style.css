@@ -1,3 +1,0 @@
-body { max-width: 1200px; margin: 0 auto;}
-.grid-container { width: 95%; height: auto; background-color: orange; display: flex; justify-content: space-around; flex-wrap: nowrap; overflow: hidden; }
-.grid-contents { width: 11%; height: 50px; background-color: antiquewhite; margin: 5px;}
